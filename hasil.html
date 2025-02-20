@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Uji Pemahaman</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const score = localStorage.getItem("quizScore");
+            const scoreElement = document.getElementById("score");
+            const buttonContainer = document.querySelector(".button-container");
+            scoreElement.innerText = `Skor Anda: ${score}/10`;
+
+            if (score >= 7) {
+                scoreElement.classList.add("meriah");
+                buttonContainer.innerHTML = `
+                    <button class="btn" onclick="retakeQuiz()">Coba Lagi</button>
+                    <button class="btn" onclick="goToEsai()">Baca Esai</button>
+                `;
+            } else {
+                buttonContainer.innerHTML = `
+                    <button class="btn" onclick="goToEsai()">Baca Esai</button>
+                `;
+            }
+        });
+
+        function retakeQuiz() {
+            window.location.href = "uji-pemahaman.html";
+        }
+
+        function goToEsai() {
+            window.location.href = "esai.html";
+        }
+    </script>
+    <style>
+        .score-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .score {
+            font-size: 2em;
+            font-weight: bold;
+            animation: scoreAnimation 1s ease-in-out;
+        }
+
+        .meriah {
+            color: gold;
+            animation: meriahAnimation 1s infinite;
+        }
+
+        @keyframes scoreAnimation {
+            0% { transform: scale(0); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes meriahAnimation {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container .btn:hover {
+            background-color: #388E3C;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Hasil Uji Pemahaman</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#intro">Intro</a></li>
+                    <li><a href="esai.html">Esai</a></li>
+                    <li><a href="uji-pemahaman.html">Uji Pemahaman</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hasil" class="content">
+        <div class="score-container">
+            <p id="score" class="score"></p>
+            <div class="button-container">
+                <!-- Buttons will be dynamically added here based on the score -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jason Louise Fernando. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
