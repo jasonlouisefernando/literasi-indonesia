@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Uji Pemahaman</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var scoreElement = document.getElementById('score');
+            var score = localStorage.getItem('quizScore') || '0';
+            scoreElement.textContent = score;
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Hasil Uji Pemahaman</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#intro">Intro</a></li>
+                    <li><a href="esai.html">Esai</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="result" class="content">
+        <h2>Skor Anda</h2>
+        <p>Anda mendapatkan skor: <span id="score"></span> dari 10</p>
+        <div class="button-container">
+            <a href="uji-pemahaman.html" class="btn">Coba Lagi</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Jason Louise Fernando. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var yearElement = document.getElementById('year');
+            var currentYear = new Date().getFullYear();
+            yearElement.textContent = currentYear;
+        });
+    </script>
+</body>
+
+</html>

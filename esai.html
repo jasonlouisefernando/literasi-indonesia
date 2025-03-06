@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esai</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js" defer></script>
+    <style>
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #388E3C;
+            transform: translateY(-2px);
+        }
+
+        .btn:active {
+            background-color: #2E7D32;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Faktor Penyebab Rendahnya Minat Baca di Indonesia<br>dan Dampaknya terhadap Kualitas Penduduk</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#intro">Intro</a></li>
+                    <li><a href="esai.html">Esai</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="progress-bar"></div>
+    <script>
+        window.addEventListener('scroll', function() {
+            const progressBar = document.getElementById('progress-bar');
+            const totalHeight = document.body.scrollHeight - window.innerHeight;
+            const progressHeight = (window.scrollY / totalHeight) * 100;
+            progressBar.style.width = progressHeight + '%';
+        });
+    </script>
+    <style>
+        #progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 5px;
+            background-color: #4CAF50;
+            z-index: 1000;
+        }
+    </style>
+
+    <section id="esai" class="content">
+        <h2>Pendahuluan</h2>
+        <p id="pendahuluan">Minat baca merupakan salah satu faktor utama dalam meningkatkan kualitas sumber daya manusia dan kemajuan suatu negara. Namun, di Indonesia, tingkat literasi membaca masih tergolong rendah. Berdasarkan data dari Programme for International Student Assessment (PISA) 2022, skor literasi membaca siswa Indonesia mencapai 359 poin, menempatkan Indonesia di peringkat 70 dari 80 negara yang berpartisipasi. Posisi ini menunjukkan bahwa Indonesia berada di 10 peringkat terbawah dalam hal literasi membaca (Zulfikar, 2023). Rendahnya minat baca di Indonesia dapat disebabkan oleh berbagai faktor, seperti kurangnya akses terhadap bahan bacaan, pengaruh teknologi digital yang lebih menarik dibandingkan buku, serta budaya membaca yang belum menjadi kebiasaan di masyarakat. Kondisi ini tentu memiliki dampak besar terhadap kualitas penduduk, baik dalam aspek pendidikan, ekonomi, maupun daya saing di tingkat global. Esai ini akan membahas faktor-faktor yang menyebabkan rendahnya minat baca di Indonesia serta dampaknya terhadap kualitas penduduk. Dengan memahami akar permasalahan ini, diharapkan dapat ditemukan solusi yang efektif untuk meningkatkan tingkat literasi di Indonesia.</p>
+        
+        <h2>Faktor Penyebab Rendahnya Minat Baca</h2>
+        Rendahnya minat baca di Indonesia dipengaruhi oleh berbagai faktor, baik dari segi aksesibilitas, budaya, maupun perkembangan teknologi. Salah satu faktor utama adalah keterbatasan akses terhadap bahan bacaan. Berdasarkan data, sebanyak 31.410 desa di Indonesia telah memiliki perpustakaan desa atau Taman Bacaan Masyarakat (TBM), sementara 42.641 desa lainnya belum memiliki fasilitas tersebut (Meinita, 2023). Ketimpangan ini menunjukkan bahwa masih banyak masyarakat yang kesulitan mendapatkan bahan bacaan yang memadai, terutama di daerah pedesaan. Selain itu, rendahnya budaya membaca di kalangan masyarakat juga menjadi faktor yang berkontribusi. Banyak masyarakat yang lebih memilih hiburan digital seperti media sosial dan video pendek dibandingkan membaca buku. Menurut Anindita (2023), sebanyak 85% pengguna internet di Indonesia lebih memilih mengakses konten hiburan dibandingkan membaca artikel atau buku digital. Preferensi ini menunjukkan bahwa kebiasaan membaca semakin tergeser oleh konsumsi konten visual yang lebih cepat dan menarik. Perkembangan teknologi juga membawa dampak terhadap minat baca. Meskipun teknologi menyediakan akses ke berbagai sumber bacaan digital, banyak masyarakat yang lebih tertarik pada konten hiburan daripada materi edukatif. Hal ini menyebabkan kebiasaan membaca buku fisik semakin berkurang, yang berdampak pada rendahnya tingkat literasi di Indonesia.
+                
+        </ul>
+
+        <h2>Dampak Rendahnya Minat Baca</h2>
+        <p>Rendahnya minat baca memiliki dampak terhadap kemampuan berpikir kritis masyarakat. Membaca secara aktif melibatkan proses analisis, evaluasi, dan refleksi, yang semuanya merupakan komponen utama dalam berpikir kritis. Tanpa kebiasaan membaca yang kuat, kemampuan individu untuk memahami dan mengevaluasi informasi menjadi terbatas. Akibatnya, masyarakat menjadi lebih rentan terhadap informasi yang menyesatkan serta kurang mampu dalam mengambil keputusan yang rasional dan berbasis data (Situs Budaya, 2023). Selain itu, rendahnya literasi juga berpengaruh pada kualitas sumber daya manusia. Kebiasaan membaca yang minim menyebabkan keterbatasan wawasan, kreativitas, dan inovasi, yang pada akhirnya menghambat produktivitas kerja. Kualitas tenaga kerja yang rendah mengurangi daya saing Indonesia dalam menghadapi persaingan global, terutama di era digital yang menuntut keterampilan berpikir analitis dan pemecahan masalah yang baik.
+            Dampak lainnya terlihat pada sektor perekonomian. Kurangnya budaya membaca menyebabkan rendahnya kemampuan adaptasi terhadap perkembangan teknologi dan inovasi, yang dapat menghambat produktivitas di berbagai sektor industri dan bisnis. Negara-negara dengan tingkat literasi tinggi cenderung memiliki pertumbuhan ekonomi yang lebih baik, karena masyarakatnya lebih mampu mengakses dan memanfaatkan informasi untuk menciptakan peluang ekonomi baru serta meningkatkan taraf hidup mereka. Menurut penelitian dari Universitas Airlangga, tingkat literasi yang rendah berkontribusi pada tingginya angka putus sekolah, kemiskinan, dan pengangguran. Studi ini menunjukkan bahwa wilayah dengan tingkat literasi tinggi cenderung memiliki angka partisipasi sekolah yang lebih tinggi, yang pada gilirannya memudahkan penduduk memasuki pasar kerja dan mengurangi tingkat pengangguran terbuka (Sjafii, 2024). Jika budaya membaca tidak segera diperbaiki, dampak negatif ini akan terus berlanjut dan semakin memperburuk kualitas hidup masyarakat Indonesia. Oleh karena itu, perlu adanya upaya yang lebih serius dalam meningkatkan minat baca agar dampak buruk ini dapat diminimalkan.
+            </p>
+        </ul>
+
+        <h2>Kesimpulan</h2>
+        <p>Rendahnya minat baca di Indonesia merupakan permasalahan serius yang berdampak luas terhadap kualitas penduduk. Berbagai faktor seperti keterbatasan akses bahan bacaan, budaya membaca yang lemah, dan dominasi konten hiburan digital menjadi penyebab utama rendahnya literasi. Dampak dari rendahnya minat baca terlihat pada menurunnya kemampuan berpikir kritis, rendahnya kualitas sumber daya manusia, dan hambatan dalam pertumbuhan ekonomi. Oleh karena itu, diperlukan upaya yang lebih serius dari berbagai pihak, baik pemerintah, lembaga pendidikan, maupun masyarakat, untuk meningkatkan budaya literasi di Indonesia. Langkah seperti penyediaan akses bahan bacaan yang lebih merata, kampanye literasi, serta pemanfaatan teknologi secara positif dapat menjadi solusi untuk meningkatkan minat baca dan menciptakan generasi yang lebih unggul di masa depan.</p>
+
+        <a href="uji-pemahaman.html" class="btn">Uji Pemahaman</a>
+        <a href="literasi-indonesia.pdf" download="literasi-indonesia.pdf" class="btn">Download PDF</a>
+    </section>
+
+    <section id="referensi" class="content">
+        <h2>Referensi</h2>
+        <ul>
+            <li>Zulfikar, F. (2023). Top 10 Skor Literasi Membaca Tertinggi di PISA 2022, Tetangga RI Nomor 1. Detik.com. <a href="https://www.detik.com/edu/detikpedia/d-7096531/top-10-skor-literasi-membaca-tertinggi-di-pisa-2022-tetangga-ri-nomor-1">https://www.detik.com/edu/detikpedia/d-7096531/top-10-skor-literasi-membaca-tertinggi-di-pisa-2022-tetangga-ri-nomor-1</a>, diakses pada 27 Februari 2025, pukul 11:11 WIB.</li>
+            <li>Meinita, H. (2023). Rakornas Bidang Perpustakaan Tahun 2023: Pengembangan Perpustakaan Desa untuk Tingkatkan Kesejahteraan Masyarakat. Perpustakaan Nasional Republik Indonesia. <a href="https://www.perpusnas.go.id/berita/rakornas-bidang-perpustakaan-tahun-2023-pengembangan-perpustakaan-desa-untuk-tingkatkan-kesejahteraan-masyarakat">https://www.perpusnas.go.id/berita/rakornas-bidang-perpustakaan-tahun-2023-pengembangan-perpustakaan-desa-untuk-tingkatkan-kesejahteraan-masyarakat</a>, diakses pada tanggal 27 Februari 2025, pukul 11:23 WIB.</li>
+            <li>Anindita, N. P. (2023). Dampak Menonton Video Pendek: Mengapa Kita Mulai Kehilangan Minat Membaca?. Kumparan. <a href="https://kumparan.com/najla-pasya-anindita/dampak-menonton-video-pendek-mengapa-kita-mulai-kehilangan-minat-membaca-23pWGPB6ZL0?utm_source=chatgpt.com">https://kumparan.com/najla-pasya-anindita/dampak-menonton-video-pendek-mengapa-kita-mulai-kehilangan-minat-membaca-23pWGPB6ZL0?utm_source=chatgpt.com</a>, diakses pada 28 Februari 2025, pukul 11:14 WIB.</li>
+            <li>Situs Budaya. (2023). Fenomena Budaya Literasi Rendah di Indonesia: Penyebab dan Solusinya. situsbudaya.id. <a href="https://situsbudaya.id/budaya-literasi-rendah-2/">https://situsbudaya.id/budaya-literasi-rendah-2/</a>, diakses pada 28 Februari 2025, pukul 13:07 WIB.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jason Louise Fernando. All rights reserved.</p>
+    </footer>
+
+    <div id="popup-notification"></div>
+    <script>
+        // Remove the downloadPDF function as it's no longer needed
+    </script>
+
+</body>
+</html>
